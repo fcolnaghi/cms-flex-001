@@ -1,0 +1,459 @@
+@CHARSET "ISO-8859-1";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abs, br, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-family: Tahoma;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+}
+
+#wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#conteudoInterno {
+    background: none repeat scroll 0 0 #EEE;
+    border-top: 3px solid #CCC;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+#displayOferta {
+	height: 300px;
+}
+
+#header {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 3px solid #EEE;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.noBorder {
+    border: none;
+}
+
+#header h1 a.logo {
+    background: url("../images/logo.jpg") no-repeat scroll 0 0 transparent;
+}
+
+#header h1, #header h1 a {
+    display: block;
+    float: left;
+    height: 50px;
+    margin-top: 4px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: -5555px;
+    width: 257px;
+}
+
+#header ul.nav li {
+    border-bottom: none;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 2px;
+    margin: 25px 0px 0px 0px;
+}
+
+#header ul.nav li a {
+	background-color: #ffce74;
+	color: #000;
+	text-decoration: none;
+	padding: 5px 20px;
+	display: block;
+}
+
+#header ul.nav li a:hover {
+	color: #000;
+	background-color: #ff8913;
+}
+
+#header ul.nav li a.ativo {
+	color: #000;
+	background-color: #ff8913;
+}
+
+#header ul.nav {
+    float: right;
+}
+
+.clearfix {
+    display: block;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+.header {
+	width: 1000px;
+	border: 1px solid #666;
+	position: absolute;
+}
+
+.headerMenu {
+	border: 1px solid #000;
+	position: relative;
+}
+
+.content {
+	border: 1px solid #AAA;
+}
+
+#footer {
+    background: #000;
+    border-top: 3px solid #CCC;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding-bottom: 15px;
+}
+
+#footer #interno {
+	width: 1000px;
+	margin: 15px auto;
+	display: block;
+	text-align: left;
+	color: #FFF;
+}
+
+#displayOferta {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+#displayOferta .produto {
+	margin-top: 5px;
+}
+
+#displayOferta .boxImagem {
+	float: left;
+    width: 350px;
+}
+
+#displayOferta .descricao {
+	float: left;
+    position: relative;
+    width: 395px;
+    text-align: left;
+}
+
+#displayOferta .estatisticas {
+    float: right;
+    width: 225px;
+}
+
+.contador, .totalVendas, .compartilhe {
+	text-align: center;
+	background-color: #ffce74;
+	border: 1px solid #ffba60;
+	margin-bottom: 5px;
+}
+
+.relogio {
+    background: url("../images/relogio.png") no-repeat scroll left top transparent;
+    display: block;
+    margin-left: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    width: 185px;
+}
+
+.relogio li {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    height: 32px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 3px;
+    text-align: center;
+    width: 59px;
+}
+
+.label li {
+    color: #191B1F;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 1px;
+    padding-right: 1px;
+    text-align: center;
+    width: 59px;
+}
+
+.label {
+    display: block;
+    margin: 0 0 0 15px;
+    padding-top: 4px;
+    text-align: left;
+    width: 185px;
+    height: 20px;
+}
+
+.itemLabel {
+    display: block;
+    font-weight: bold;
+    float: left;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.item {
+    display: block;
+    float: right;
+    font-size: 12px;
+}
+
+.totalVendas {
+	font-size: 10px;
+}
+
+.contador h2,
+.totalVendas h2,
+.compartilhe h2 {
+	text-align: left;
+	background-color: #ffba60;
+	padding: 5px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+h2.titulo {
+	font-size: 14px;
+}
+
+h3.preco {
+    font-size: 28px;
+    margin: 10px 0px;
+	float: left;
+}
+
+ul#frete {
+	float: left;
+	font-size: 14px;
+	margin: 20px 0px;
+	height: 25px;
+	width: 150px;
+	text-align: right;
+	vertical-align: baseline;
+}
+
+.infos {
+	clear: both;
+	font-size: 12px;
+}
+
+#conteudoInterno #interno {
+	width: 1000px;
+	margin: 0 auto;
+	display: block;
+}
+
+#conteudoInterno #interno .descricaoCompleta {
+	width: 500px;
+	text-align: left;
+	float: left;
+	display: block;
+}
+
+#conteudoInterno #interno .otherStuff {
+	width: 250px;
+	text-align: left;
+	float: left;
+	display: block;
+}
+
+ul#menuFooter {
+	float: left;
+	width: 135px;
+	font-size: 12px;
+}
+
+ul#menuFooter li {
+	margin-bottom: 10px;
+}
+
+ul#menuFooter li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul#menuFooter li a:hover {
+	color: #ffce74;
+	text-decoration: underline;
+}
+
+.disclamer {
+	width: 400px;
+	float: left;
+}
+
+.disclamer p {
+	padding-right: 35px;
+	float: left;
+	text-align: justify;
+	font-size: 10px;
+}
+
+.disclamer h1 {
+	color: #ff8913; 
+}
+
+ul#menuFooter li.tituloFooter a,
+ul#menuFooter li.tituloFooter  {
+	color: #ff8913;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	margin-left: 0px;
+}
+
+.bloco1,
+.bloco2,
+.blocoSemRegistro {
+	margin: 10px 5px;
+	display: block;
+	padding: 5px;
+}
+
+#conteudoInterno #interno .carrinho {
+	width: 250px;
+	text-align: left;
+	float: left;
+	display: block;
+}
+
+.blocoSemRegistro {
+	background-color: #FFFFFF;
+}
+
+.blocoSemRegistro h3 {
+	font-size: 16px;
+}
+
+.blocoSemRegistro p {
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.bloco1 {
+	background-color: #FF0000;
+}
+
+.bloco2 {
+	background-color: #000000;
+}
+
+#descCompleta {
+	margin: 10px 0px;
+	background-color: #CCC;
+	display: block;
+	padding: 5px;
+}
+
+ a.esqueci {
+	font-size: 12px;
+	text-decoration: none;
+	color: #FF8913;
+}
+
+a:hover.esqueci {
+	color: #000;
+}
+
+#descCompleta table {
+	font-size: 14px;
+}
+
+#descCompleta input.text {
+	padding: 2px;
+	width: 280px;
+}
+
+table.costCalc {
+    background-color: #F9F9F9;
+    margin-top: 10px;
+    width: 100%;
+}
+
+table.costCalc td {
+    padding: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.costCalc .subtotal, table.costCalc .shipping {
+    font-weight: bold;
+}
+
+table.costCalc .each, table.costCalc .subtotal, table.costCalc .shipping, table.costCalc .total {
+    font-size: 14px;
+    text-align: right;
+}
+
+table.costCalc .total {
+    border-top: 1px solid #CCCCCC;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2.produto {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.cartText {
+	font-size: 12px;
+}
+
+.descricaoCompleta table tr td {
+   padding-bottom: 5px;
+}
+
+.descricaoCompleta h4 {
+	padding: 5px 0px;
+	font-size: 14px;
+	font-weight: bold;
+	width: 100%;
+	border-bottom: 2px solid #EEE;
+	margin-bottom: 5px;
+}
+
+.textCep {
+	width: 70px;
+}
+
+.textTel {
+	width: 90px;
+}
+
+p.notes {
+	font-size: 9px;
+	color: #666;
+	padding: 4px 0px;
+}

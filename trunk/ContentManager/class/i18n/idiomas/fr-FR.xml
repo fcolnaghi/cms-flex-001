@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idioma lang="fr_FR">
+	<label>
+		<tag>erro.nao.encontrado</tag>
+		<texto>Ne trouve aucun fichier</texto>
+	</label>
+	<label>
+		<tag>erro.sem.disponibilidade</tag>
+		<texto>Ce produit n'est pas disponible en stock</texto>
+	</label>
+</idioma>

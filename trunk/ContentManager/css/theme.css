@@ -1,0 +1,116 @@
+body {
+	background: url("../images/bg-light.jpg") repeat scroll center center transparent;
+}
+
+#container {
+	width: 100%;
+	float: left;
+}
+
+#boxUser {
+	line-height: 20px;
+	background: url(../images/barra_user.png) no-repeat left top;
+}
+
+#boxUser .settings {
+	padding-left: 20px;
+	background: url(../images/icons/small/78.png) no-repeat left 3px transparent;
+}
+
+#boxUser .exit {
+	padding-left: 20px;
+	background: url(../images/icons/small/12.png) no-repeat left 3px transparent;
+}
+
+#boxUser .messages {
+	padding-left: 20px;
+	background: url(../images/icons/small/48.png) no-repeat left 3px transparent;
+}
+
+#boxUser .welcome {
+	padding-left: 20px;
+	background: url(../images/icons/small/581.png) no-repeat left 2px transparent;
+	font-size: 14px;
+}
+
+#boxUser .last {
+	font-size: 10px;
+	color: #AAA;
+}
+
+#boxUser a, #boxUser a:link, #boxUser a:visited , #main a {
+	color: #FFFFFF;
+}
+
+#boxUser a:hover, #main a:hover{
+	color: #ecd700;
+}
+
+/* Drop-Down menu */
+ul.topnav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 35px;
+	width: 100%;
+	background: #222;
+	font-size: 1.2em;
+	background: url(../images/topnav_bg.gif) repeat-x;
+}
+ul.topnav li {
+	float: left;
+	margin: 0;
+	padding: 0 15px 0 10px;
+	position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+ul.topnav li a{
+	padding: 10px 5px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	float: left;
+}
+ul.topnav li a:hover{
+	background: url(../images/topnav_hover.gif) no-repeat center top;
+}
+ul.topnav li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 35px;
+	float: left;
+	background: url(../images/subnav_btn.gif) no-repeat center top;
+}
+ul.topnav li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+ul.topnav li ul.subnav {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: 0; top: 35px;
+	background: #333;
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	/*width: 200px;*/
+	border: 1px solid #111;
+	z-index: 1;
+}
+ul.topnav li ul.subnav li{
+	margin: 0; padding: 0;
+	border-top: 1px solid #252525; /*--Create bevel effect--*/
+	border-bottom: 1px solid #444; /*--Create bevel effect--*/
+	clear: both;
+	/*width: 200px;*/
+}
+html ul.topnav li ul.subnav li a {
+	float: left;
+	width: 180px;
+	background: #333 url(../images/dropdown_linkbg.gif) no-repeat 10px center;
+	padding-left: 20px;
+}
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+	background: #222 url(../images/dropdown_linkbg.gif) no-repeat 10px center;
+}
+
+.clear { clear: both; }
+
+.fr { float: right !important; }
+
+.none { display: none; }
