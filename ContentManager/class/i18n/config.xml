@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulo>
+	<autor>Fernando Colnaghi</autor>
+	<versao>0.1</versao>
+	<descricao>Módulo Internacionalização</descricao>
+	<parametros>
+		<diretorio>class/i18n/idiomas/</diretorio>
+	</parametros>
+</modulo>

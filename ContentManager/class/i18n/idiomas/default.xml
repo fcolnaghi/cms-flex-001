@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idioma lang="pt_BR">
+	<label>
+		<tag>erro.arquivo.nao.encontrado</tag>
+		<texto>O arquivo "{0}" não foi encontrado</texto>
+	</label>
+	<label>
+		<tag>erro.sem.disponibilidade</tag>
+		<texto>Este produto não esta disponível no estoque.</texto>
+	</label>
+	<label>
+		<tag>busca.encontrados.n.telefones</tag>
+		<texto>Foram encontrados "{0}" telefones!</texto>
+	</label>
+	<label>
+		<tag>busca.sem.resultado</tag>
+		<texto>Não foi encontrado nenhuma ocorrência.</texto>
+	</label>
+	<label>
+		<tag>sessao.expirada</tag>
+		<texto>Sua sessão expirou, ou o seu usuário esta inválido!</texto>
+	</label>
+	<label>
+		<tag>erro.usuario.invalido</tag>
+		<texto>Usuário ou senha inválidos!</texto>
+	</label>
+	<label>
+		<tag>erro.login.titulo</tag>
+		<texto>Atenção, ocorreu um erro!</texto>
+	</label>
+	<label>
+		<tag>admin.messages</tag>
+		<texto>Você tem ({0}) novas mensagens!</texto>
+	</label>
+	<label>
+		<tag>admin.welcome</tag>
+		<texto>Bem vindo, {0}</texto>
+	</label>
+	<label>
+		<tag>admin.logout</tag>
+		<texto>Sair do sistema</texto>
+	</label>
+	<label>
+		<tag>admin.settings</tag>
+		<texto>Configurações</texto>
+	</label>
+	<label>
+		<tag>admin.last.login</tag>
+		<texto>Último acesso em ({0})</texto>
+	</label>
+</idioma>

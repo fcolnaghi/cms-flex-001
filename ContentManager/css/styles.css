@@ -1,0 +1,66 @@
+/* -------------------------------------------------------------------------------------- SMALL RESET */
+* {
+	outline: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: 'Lucida Grande',Verdana,Helvetica,Arial,sans-serif;
+	font-size: 12px;
+}
+
+body {
+	font-size: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* -------------------------------------------------------------------------------------- HEADER */
+#header {
+	height: 110px;
+	background-color: #333;
+	float: left;
+	width: 100%;
+}
+
+#header .content {
+	margin: 0 auto;
+	/*width: 960px;*/
+}
+
+#boxUser {
+	display: block;
+    float: right;
+    margin: 0 25px 5px 5px;
+    padding: 5px 5px 0 10px;
+}
+/* Logotype */
+#logo {
+	display: block;
+	float: left;
+	width: 232px;
+	height: 88px;
+	margin: 10px;
+	background: url(../images/logo.png);
+}
+
+#logo a {
+	display: block;
+	float: left;
+}
+
+#logo a:hover {
+	
+}
+
+#menu {
+	width: 100%;
+	float: left;
+}
+
+#main{
+	width: 100%;
+	float: left;
+}
