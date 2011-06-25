@@ -32,7 +32,6 @@
 		<div id="conteudoInterno" class="clearfix">
 			<div id="interno">
 				<div class="descricaoCompleta">
-					<br>
 					<span id="descCompleta">
         				<h3>Já tenho cadastro, quero aproveitar as ofertas!</h3>
         				<br>
@@ -69,7 +68,6 @@
 				        <br>
 					</span>
 				</div>
-				<br>
 				<div class="otherStuff">
 					<div class="blocoSemRegistro">
 					 	<h3>Ainda não tem registro?</h3>
