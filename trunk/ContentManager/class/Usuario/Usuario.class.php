@@ -11,25 +11,26 @@
  */
 class Usuario {
 	
-	private $idusuario;
-	private $login;
-	private $nome_completo;
-	private $senha;
-	private $email;
-	private $data_cadastro;
-	private $cep;
-	private $endereco;
-	private $bairro;
-	private $cidade;
-	private $estado;
-	private $numero;
-	private $complemento;
-	private $cpf;
-	private $telefone_1;
-	private $telefone_2;
-	private $news;
-	private $status;
-	
+	public $idusuario;
+	public $login;
+	public $nome_completo;
+	public $senha;
+	public $email;
+	public $email_confirma;
+	public $data_cadastro;
+	public $cep;
+	public $endereco;
+	public $bairro;
+	public $cidade;
+	public $estado;
+	public $numero;
+	public $complemento;
+	public $cpf;
+	public $telefone_1;
+	public $telefone_2;
+	public $news;
+	public $status;
+		
 	/**
 	 * @return the $idusuario
 	 */
@@ -281,6 +282,20 @@ class Usuario {
 	public function setStatus($status) {
 		$this->status = $status;
 	}
+	/**
+	 * @return the $email_confirma
+	 */
+	public function getEmail_confirma() {
+		return $this->email_confirma;
+	}
+
+	/**
+	 * @param field_type $email_confirma
+	 */
+	public function setEmail_confirma($email_confirma) {
+		$this->email_confirma = $email_confirma;
+	}
+
 }
 
 ?>

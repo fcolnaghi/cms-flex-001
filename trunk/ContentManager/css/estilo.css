@@ -457,3 +457,18 @@ p.notes {
 	color: #666;
 	padding: 4px 0px;
 }
+
+.botao {
+	border: 1px solid #000;
+	background-color: #ffce74;
+	color: #000;
+	margin: 20px 0px;
+	padding: 5px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.botao:hover {
+	cursor: pointer;
+	background-color: #FF8913;
+}
