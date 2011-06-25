@@ -1,6 +1,27 @@
 <?php
 	include_once("constantes.php");
 	require_once(ROOT."includes/loader.php");
+	
+	if($_POST) {
+
+		$objeto = new Usuario();
+		
+		foreach ($_POST as $atributo => $valor) {
+			$campo = "set".ucfirst($atributo);
+			$objeto->$campo(strip_tags($valor));
+		}
+		
+		try {
+			$usuarioDAO = new UsuarioDAO();
+			$usuarioDAO->inserirUsuario($objeto);
+		} catch (Exception $e) {
+			ECHO $e->getMessage();
+		}
+		
+		
+	} else {
+		echo "YYYY";
+	}
 ?>
 <html>
 	<head>
@@ -13,11 +34,11 @@
 				  data: 'cep='+ cep,
 				  dataType: 'xml',
 				  success: function(data) {
-				  	$('#endereco1').val($(data).find('logradouro').text());
+				  	$('#endereco').val($(data).find('logradouro').text());
 				  	$('#bairro').val($(data).find('bairro').text());
 				  	$('#estado').val($(data).find('uf').text());
 				  	$('#cidade').val($(data).find('cidade').text());
-				  	$('#pais').val('Brasil');
+				  	$('#numero').focus();
 				  }
 				});
 			}
@@ -45,12 +66,12 @@
 					<span id="descCompleta">
         				<h3>Preencha corretamente com seus dados de cadastro</h3>
         				<br>
-				        <form target="_parent" method="post" action="login.php">
+				        <form target="_parent" method="post" action="cadastro.php">
 				        	<h4>informações de login</h4>
 				        	<table width="100%" cellpadding="2" cellspacing="2" border="0">
 				        		<tr>
 				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">nome de usuário</span></td>
-				        			<td><input type="text" value="" name="usuario" id="usuario" class="text"></td>
+				        			<td><input type="text" value="" name="login" id="login" class="text"></td>
 				        		</tr>
 				        		<tr>
 				        			<td align="right" valign="top"><span style="margin: 5px;">sua senha</span></td>
@@ -61,7 +82,7 @@
 				        	<table width="100%" cellpadding="2" cellspacing="2" border="0">
 				        		<tr>
 				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">nome completo</span></td>
-				        			<td><input type="text" value="" name="nome" id="nome" class="text"></td>
+				        			<td><input type="text" value="" name="nome_completo" id="nome_completo" class="text"></td>
 				        		</tr>
 				        		<tr>
 				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">cpf</span></td>
@@ -77,15 +98,11 @@
 				        		</tr>
 				        		<tr>
 				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">telefone contato</span></td>
-				        			<td><input type="text" value="" name="tel_contato" id="tel_contato" class="textTel"></td>
+				        			<td><input type="text" value="" name="telefone_1" id="telefone_1" class="textTel"></td>
 				        		</tr>
 				        		<tr>
 				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">telefone celular</span></td>
-				        			<td><input type="text" value="" name="tel_contato" id="tel_contato" class="textTel"></td>
-				        		</tr>
-				        		<tr>
-				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">telefone recado</span></td>
-				        			<td><input type="text" value="" name="tel_contato" id="tel_contato" class="textTel"></td>
+				        			<td><input type="text" value="" name="telefone_2" id="telefone_2" class="textTel"></td>
 				        		</tr>
 				        	</table>
 				        	
@@ -97,7 +114,7 @@
 				        		</tr>
 				        		<tr>
 				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">endereço</span></td>
-				        			<td><input type="text" value="" name="endereco1" id="endereco1" class="text"></td>
+				        			<td><input type="text" value="" name="endereco" id="endereco" class="text"></td>
 				        		</tr>
 				        		<tr>
 				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">número</span></td>
@@ -120,9 +137,13 @@
 				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">estado</span></td>
 				        			<td><input type="text" value="" name="estado" id="estado" class="text"></td>
 				        		</tr>
+				        		
 				        		<tr>
-				        			<td width="150" align="right" valign="top"><span style="margin: 5px;">país</span></td>
-				        			<td><input type="text" value="" name="pais" id="pais" class="text"></td>
+				        		<td colspan="2"><span style="margin: 20px; font-weight: bold; font-size: 11px; float: left">Desejo ser informado sobre as novas ofertas! <input type="checkbox" checked value="1" name="news" id="news"></span></td>
+				        		</tr>
+				        		<tr>
+				        			<td width="150" align="right" valign="top"></td>
+				        			<td><input type="submit" value="Rápido crie logo meu cadastro!" class="botao"></td>
 				        		</tr>
 				        	</table>
 				        </form>

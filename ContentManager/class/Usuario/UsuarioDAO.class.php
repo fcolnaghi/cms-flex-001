@@ -88,7 +88,11 @@ class UsuarioDAO extends ConexaoDB {
 	}
 	
 	public function inserirUsuario($objUsuario) {
-		$this->sqlInsert($objUsuario,"idusuario","usuario");
+		try {
+			$this->sqlInsert($objUsuario,"idusuario","usuario");
+		} catch (Exception $e) {
+			throw new Exception("Throwing an exception!"); 
+		}
 	}
 	
 	public function atualizarUsuario($objUsuario) {

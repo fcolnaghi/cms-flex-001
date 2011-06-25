@@ -118,10 +118,16 @@ class ConexaoDB {
      * 
      */
 	protected function sqlInsert($object, $indice, $tabela) {
+		
+		$atributos = "";
+		$values = "";
+		$v = "";
+		
         try {
             $i = 0;
-            
+    
             foreach ($object as $key => $value) {
+            	
             	if($i != 0) $v = ",";
 				if($indice != $key) {
 					$atributos .= $v.$key;
@@ -131,9 +137,7 @@ class ConexaoDB {
             }
                                 
             $sql = "insert into ".$tabela." (".$atributos.") VALUES (".$values.")";
-            
-            echo $sql;
-            
+
             $stmt = self::$conexao->prepare($sql);
 			
 			$i=1;
@@ -147,13 +151,10 @@ class ConexaoDB {
             	}
             }
             
-            
             $stmt->execute();
                        
-            //$this->executeSql($sql);
-            
         } catch (PDOException $e) {
-			$this->mostrarErros($e);
+			throw new Exception("Throwing an exception!"); 
         }
     }
 	/**

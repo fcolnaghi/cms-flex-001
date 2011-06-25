@@ -12,11 +12,11 @@
 	
 	        //return the transfer as a string
 	        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	
+	/*
 	        curl_setopt($ch, CURLOPT_PROXY, "http://10.2.8.200");
 			curl_setopt($ch, CURLOPT_PROXYPORT, 3128);
 			curl_setopt($ch, CURLOPT_PROXYUSERPWD, "fcolnaghi:!senha321!"); 
-	        
+	  */      
 	        // $output contains the output string
 	        $output = curl_exec($ch);
 	
